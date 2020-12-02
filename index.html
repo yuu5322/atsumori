@@ -7,7 +7,9 @@
     </head>
     <body>
         <div id="animals">
+            <input type="checkbox" v-model="animalList[0].checked">
             <p>{{animalList[0].name}}　{{animalList[0].checked}}</p>
+            <input type="checkbox" v-model="animalList[1].checked">
             <p>{{animalList[1].name}}　{{animalList[1].checked}}</p>
         </div>
     </body>
