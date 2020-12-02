@@ -7,16 +7,15 @@
     </head>
     <body>
         <div id="animals">
-            <p>{{animal1.name}}　{{animal1.checked}}</p>
-            <p>{{animal2.name}}　{{animal2.checked}}</p>
+            <p>{{animalList[0].name}}　{{animalList[0].checked}}</p>
+            <p>{{animalList[1].name}}　{{animalList[1].checked}}</p>
         </div>
     </body>
     <script>
         new Vue({
             el: '#animals',
             data: {
-                animal1: {name: 'カマキリ', checked: 'true'},
-                animal2: {name: 'モンシロチョウ', checked: 'false'},
+                animalList: [{ name: 'カマキリ', checked: 'true'}, { name: 'モンシロチョウ', checked: 'false' }]
             }
         })
     </script>
