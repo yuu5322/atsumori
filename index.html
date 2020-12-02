@@ -2,20 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>タイトル</title>
+        <title>あつ森寄贈一覧</title>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     </head>
     <body>
         <div id="animals">
-            <p>{{animalArray[0]}}</p>
-            <p>{{animalArray[1]}}</p>
+            <p>{{animal1.name}}　{{animal1.checked}}</p>
+            <p>{{animal2.name}}　{{animal2.checked}}</p>
         </div>
     </body>
     <script>
         new Vue({
             el: '#animals',
             data: {
-                animalArray: ['モンシロチョウ', 'カマキリ']
+                animal1: {name: 'カマキリ', checked: 'true'},
+                animal2: {name: 'モンシロチョウ', checked: 'false'},
             }
         })
     </script>
