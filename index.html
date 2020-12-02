@@ -6,15 +6,16 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     </head>
     <body>
-        <div id="app">
-            <p>{{myText}}</p>
+        <div id="animals">
+            <p>{{animalArray[0]}}</p>
+            <p>{{animalArray[1]}}</p>
         </div>
     </body>
     <script>
         new Vue({
-            el: '#app',
+            el: '#animals',
             data: {
-                myText: 'Hello world!'
+                animalArray: ['モンシロチョウ', 'カマキリ']
             }
         })
     </script>
